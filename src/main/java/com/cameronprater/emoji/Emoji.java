@@ -110,10 +110,7 @@ public class Emoji {
      *   description='smiling face with open mouth and smiling eyes',
      *   supportsFitzpatrick=false,
      *   aliases=[smile],
-     *   tags=[happy, joy, pleased],
-     *   unicode='😄',
-     *   htmlDec='&amp;#128516;',
-     *   htmlHex='&amp;#x1f604;'
+     *   unicode='😄'
      * }</code>
      *
      * @return the string representation
