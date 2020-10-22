@@ -28,7 +28,6 @@ public class EmojiTrie {
      * Checks if sequence of chars contain an emoji.
      *
      * @param sequence Sequence of char that may contain emoji in full or partially.
-     *
      * @return
      * &lt;li&gt;
      *   Matches.EXACTLY if char sequence in its entirety is an emoji
@@ -46,6 +45,7 @@ public class EmojiTrie {
 
     /**
      * Checks if the sequence of chars within the given bound indices contain an emoji.
+     *
      * @see #isEmoji(char[])
      */
     public Matches isEmoji(char[] sequence, int start, int end) {
@@ -64,6 +64,7 @@ public class EmojiTrie {
 
     /**
      * Finds Emoji instance from emoji unicode
+     *
      * @param unicode unicode of emoji to get
      * @return Emoji instance if unicode matches and emoji, null otherwise.
      */
