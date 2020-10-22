@@ -22,11 +22,11 @@ public class EmojiLoader {
     }
 
     /**
-     * Loads a JSONArray of emojis from an InputStream, parses it and returns the associated list of {@link Emoji}s
+     * Loads an InputStream of emojis in JSON, parses it and returns the associated list of {@link Emoji}s
      *
-     * @param stream the stream of the JSONArray
+     * @param stream the stream of the emojis in JSON
      * @return the list of {@link Emoji}s
-     * @throws IOException if an error occurs while reading the stream or parsing the JSONArray
+     * @throws IOException if an error occurs while reading the stream
      */
     public static List<Emoji> loadEmojis(InputStream stream) throws IOException {
         return new ObjectMapper().registerModule(new SimpleModule().addDeserializer(Emoji.class, new EmojiDeserializer()))
