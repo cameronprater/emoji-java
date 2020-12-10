@@ -1,5 +1,3 @@
-# IntelliJ
 .idea
-
-# Output artifacts
+*.iml
 target
