@@ -4586,8 +4586,8 @@
     ]
   },
   {
-    "emojiChar": "❄",
-    "unicode": "\u2744",
+    "emojiChar": "❄️",
+    "unicode": "\u2744\uFE0F",
     "description": "snowflake",
     "aliases": [
       "snowflake"
