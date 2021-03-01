@@ -1,0 +1,9 @@
+version: 2
+
+updates:
+  - package-ecosystem: maven
+    directory: '/core'
+    labels: [ ]
+    allow:
+      - dependency-name: com.fasterxml.jackson.core:jackson-databind
+    rebase-strategy: disabled

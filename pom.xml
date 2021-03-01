@@ -1,39 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cameronprater</groupId>
+        <artifactId>mit</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>com.cameronprater</groupId>
     <artifactId>emoji-java</artifactId>
-    <version>5.1.1</version>
+    <name>Emoji Java</name>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-    <properties>
-        <maven.compiler.release>8</maven.compiler.release>
-        <maven.compiler.version>3.8.1</maven.compiler.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <jackson.version>2.11.3</jackson.version>
-        <junit.version>4.13.1</junit.version>
-    </properties>
+    <scm>
+        <url>https://github.com/cameronprater/emoji-java</url>
+        <connection>scm:git:git@github.com/cameronprater/emoji-java.git</connection>
+        <developerConnection>scm:git:git@github.com:cameronprater/emoji-java.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>${jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>core</module>
+        <module>table-gen</module>
+    </modules>
 
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.version}</version>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>

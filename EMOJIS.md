@@ -1,6 +1,4 @@
-## Available Emojis
-
-Here is a table of the available emojis and their aliases.
+# Emojis
 
 | Emoji | Aliases | Emoji | Aliases |
 | :---: | ------- | :---: | ------- |
